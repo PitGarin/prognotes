@@ -4,7 +4,7 @@ public class CylinderComputation {
 
 	public static void main(String[] args) {
 
-		double radius = 3.1;
+		double radius = 3.2;
 		double height = 11.1;
 		final double PI = 3.14;
 		double surfaceArea;
