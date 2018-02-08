@@ -1,4 +1,4 @@
-package com.home.notes;
+package com.home.notes.common;
 
 public class VarargsTest {
 
