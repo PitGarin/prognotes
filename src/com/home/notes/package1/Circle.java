@@ -1,21 +1,27 @@
 package com.home.notes.package1;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Circle implements FigureArea {
 
 	private double radius;
-	List<Object> list = new ArrayList<>();
+	private double circleArea;
+
+	public Circle(double radius) {
+		this.radius = radius;
+	}
+
+	public final double getRadius() {
+		return radius;
+	}
+
+	public final double getCircleArea() {
+		return circleArea;
+	}
 
 	@Override
-	public double getArea(double... doubles) {
-		for (double d : doubles) {
+	public void getFigureArea() {
 
-			list.add(d);
-		}
-		this.radius = (double) list.get(0);
-		return Math.pow(radius, 2) * Math.PI;
+		this.circleArea = Math.pow(this.radius, 2) * Math.PI;
+		System.out.println(String.format("Circle area is %.2f", this.circleArea));
 	}
 
 }

@@ -1,24 +1,33 @@
 package com.home.notes.package1;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Square implements FigureArea {
 
 	private double height;
 	private double width;
-	List<Object> list = new ArrayList<>();
+	private double squareArea;
+
+	public Square(double height, double width) {
+		this.height = height;
+		this.width = width;
+	}
+
+	public final double getfArea() {
+		return squareArea;
+	}
+
+	public final double getHeight() {
+		return height;
+	}
+
+	public final double getWidth() {
+		return width;
+	}
 
 	@Override
-	public double getArea(double... doubles) {
-		for (double d : doubles) {
+	public void getFigureArea() {
 
-			list.add(d);
-		}
-		this.height = (double) list.get(0);
-		this.width = (double) list.get(1);
-
-		return this.height * this.width;
+		this.squareArea = this.height * this.width;
+		System.out.println(String.format("Square area is %.2f", this.squareArea));
 	}
 
 }
