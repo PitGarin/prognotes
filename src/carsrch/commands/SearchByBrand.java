@@ -21,7 +21,6 @@ public class SearchByBrand extends Command {
 	public void doAction() throws IOException {
 		System.out.println("Input brand to find.".toUpperCase());
 
-		// распечатка имеющихся брендов
 		printBrand();
 
 		BufferedReader bReader = new BufferedReader(new InputStreamReader(System.in));

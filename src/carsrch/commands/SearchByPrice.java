@@ -27,7 +27,6 @@ public class SearchByPrice extends Command {
 		String input = bReader.readLine();
 		int price = Integer.parseInt(input);
 
-		// метод
 		printPriceResult(price);
 
 	}
