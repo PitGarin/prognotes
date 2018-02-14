@@ -54,11 +54,9 @@ public class DataBase {
 		for (Command command : cmdList) {
 			if (command.isValid(input)) {
 				command.doAction();
-			}
-			/*
-			 * if (!command.isValid(input)) { System.out.println("Wrong key.");
-			 * return; }
-			 */
+			} /*
+				 * else { return; }
+				 */
 
 		}
 

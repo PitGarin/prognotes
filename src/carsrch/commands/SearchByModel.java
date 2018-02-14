@@ -29,7 +29,9 @@ public class SearchByModel extends Command {
 			if (car.isSelectedModel(input.toUpperCase())) {
 				System.out.println(String.format("Model: %s, price: $%s.", car.getModel(), car.getPrice()));
 				carQuantity++;
-			}
+			} /*else {
+				return;
+			}*/
 		}
 		System.out.println("Cars found by model: " + carQuantity);
 

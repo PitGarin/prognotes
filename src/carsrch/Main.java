@@ -7,8 +7,9 @@ public class Main {
 	public static void main(String[] args) throws IOException {
 
 		DataBase dataBase = new DataBase();
-		dataBase.execute();
-
+		while (true) {
+			dataBase.execute();
+		}
 	}
 
 }

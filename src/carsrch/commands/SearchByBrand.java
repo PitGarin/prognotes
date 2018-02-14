@@ -31,7 +31,9 @@ public class SearchByBrand extends Command {
 				System.out.println(String.format("Brand: %s, model: %s, price: $%s.", car.getBrand(), car.getModel(),
 						car.getPrice()));
 				carQuantity++;
-			}
+			} /*else {
+				 return;
+			}*/
 		}
 		System.out.println("Cars found by brand: " + carQuantity);
 	}
