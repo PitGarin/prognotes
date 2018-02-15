@@ -19,19 +19,23 @@ public class SearchByModel extends Command {
 
 	@Override
 	public void doAction() throws IOException {
+
 		System.out.println("Input model to find.".toUpperCase());
+
 		for (Car car : carList) {
 			System.out.println(String.format("- %s.", car.getModel()));
 		}
+
 		BufferedReader bReader = new BufferedReader(new InputStreamReader(System.in));
 		String input = bReader.readLine();
+
 		for (Car car : carList) {
 			if (car.isSelectedModel(input.toUpperCase())) {
 				System.out.println(String.format("Model: %s, price: $%s.", car.getModel(), car.getPrice()));
 				carQuantity++;
-			} /*else {
-				return;
-			}*/
+			} /*
+				 * else { return; }
+				 */
 		}
 		System.out.println("Cars found by model: " + carQuantity);
 

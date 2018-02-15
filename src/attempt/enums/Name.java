@@ -1,0 +1,25 @@
+package attempt.enums;
+
+public enum Name {
+	FOSTER,
+	TRAVIS,
+	SYLVESTER,
+	DONNIE, 
+	NICKOLAS,
+	BROCK, 
+	TOD,
+	EDGAR,
+	ROBERT, 
+	FREEMAN,
+	ARON, 
+	CLEVELAND,
+	MIQUEL, 
+	ARLEN, 
+	NOBLE, 
+	JOHNSON,
+	DOUGLASS,
+	MARCEL,
+	MARSHALL,
+	KOREY;
+
+}

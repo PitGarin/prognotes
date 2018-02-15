@@ -19,20 +19,22 @@ public class SearchByBrand extends Command {
 
 	@Override
 	public void doAction() throws IOException {
+
 		System.out.println("Input brand to find.".toUpperCase());
 
 		printBrand();
 
 		BufferedReader bReader = new BufferedReader(new InputStreamReader(System.in));
 		String input = bReader.readLine();
+
 		for (Car car : carList) {
 			if (car.isSelectedBrand(input.toUpperCase())) {
 				System.out.println(String.format("Brand: %s, model: %s, price: $%s.", car.getBrand(), car.getModel(),
 						car.getPrice()));
 				carQuantity++;
-			} /*else {
-				 return;
-			}*/
+			} /*
+				 * else { return; }
+				 */
 		}
 		System.out.println("Cars found by brand: " + carQuantity);
 	}
