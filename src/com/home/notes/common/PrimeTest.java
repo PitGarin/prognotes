@@ -4,7 +4,7 @@ public class PrimeTest {
 
 	public static void main(String[] args) {
 
-		double x = 11;
+		double x = 6;
 		double maxF = (Math.sqrt(x));
 		System.out.println(maxF);
 		for (double i = 2; i <= maxF; i++) {
@@ -12,9 +12,9 @@ public class PrimeTest {
 				System.out.println("x is not a prime.");
 				break;
 			}
-			System.out.println("x is a prime.");
+			
 		}
-
+		System.out.println("x is a prime.");
 	}
 
 }

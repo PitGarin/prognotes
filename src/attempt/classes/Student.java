@@ -7,7 +7,6 @@ public class Student {
 
 	public Student(int mark, String name) {
 		this.name = name;
-
 		this.mark = mark;
 	}
 

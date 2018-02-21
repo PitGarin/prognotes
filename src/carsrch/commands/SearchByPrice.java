@@ -11,8 +11,7 @@ import carsrch.enumerations.DODGE;
 import carsrch.enumerations.VW;
 
 public class SearchByPrice extends Command {
-
-	List<Car> carList;
+	private List<Car> carList;
 
 	public SearchByPrice(String key, List<Car> carList) {
 		super("Search by price.");
@@ -31,21 +30,13 @@ public class SearchByPrice extends Command {
 
 	}
 
-	private void printPriceResult(int price) {
-		if (price > 300 && price < 800) {
-			for (int i = 0; i < VW.values().length; i++) {
-				System.out.println(String.format("Model: %s.", VW.values()[i]));
-			}
-		}
-		if (price > 200 && price < 500) {
-			for (int i = 0; i < AUDI.values().length; i++) {
-				System.out.println(String.format("Model: %s.", AUDI.values()[i]));
-			}
-		}
-		if (price > 1200 && price < 2700) {
-			for (int i = 0; i < DODGE.values().length; i++) {
-				System.out.println(String.format("Model: %s.", DODGE.values()[i]));
+	private void printPriceResult(int price) throws IOException {
+
+		for (Car car : carList) {
+			if (price == car.getPrice()) {
+				System.out.println(String.format("Model: %s/Price: $%s.", car.getModel(), car.getPrice()));
 			}
 		}
 	}
+
 }
