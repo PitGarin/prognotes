@@ -38,4 +38,9 @@ public class Car {
 		return true;
 
 	}
+
+	@Override
+	public int hashCode() {
+		return name.hashCode();
+	}
 }
