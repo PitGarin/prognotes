@@ -1,4 +1,4 @@
-package iterarionpractice;
+package iterationpractice;
 
 public class IterationsExamples {
 

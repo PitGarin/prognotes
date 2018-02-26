@@ -14,4 +14,11 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>pepa.png</name>
+			<type>1</type>
+			<location>D:/pictures/15152395402183.png</location>
+		</link>
+	</linkedResources>
 </projectDescription>
